@@ -250,7 +250,7 @@ export default function About() {
 
               {/* IMAGE */}
               <motion.img
-                src="/Ansh.png"
+                src="/Anish.png"
                 alt="Anish Patnaik"
                 animate={{
                   y: [0, -10, 0],
