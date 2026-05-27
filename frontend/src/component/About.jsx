@@ -1,18 +1,79 @@
 import { motion } from "framer-motion";
 
 export default function About() {
+  const skills = [
+    {
+      title: "Data Analyst",
+      icon: "📊",
+      desc:
+        "Excel • SQL • Power BI • Data Visualization • EDA • Reporting",
+    },
+
+    {
+      title: "Full Stack Developer",
+      icon: "💻",
+      desc:
+        "React • Node.js • Express • MongoDB • REST APIs • Authentication",
+    },
+
+    {
+      title: "AI Integration",
+      icon: "🤖",
+      desc:
+        "OpenAI API • AI Automation • Prompt Engineering • SaaS Systems",
+    },
+  ];
+
+  const stats = [
+    {
+      value: "8+",
+      label: "Years Experience",
+    },
+
+    {
+      value: "20+",
+      label: "Projects Built",
+    },
+
+    {
+      value: "100%",
+      label: "Passion Driven",
+    },
+  ];
+
   return (
     <section
       id="about"
       className="
         relative
         overflow-hidden
+
         py-24
+        lg:py-32
+
         px-6
+
         bg-[#050816]
       "
     >
-      {/* BACKGROUND GLOWS */}
+      {/* ======================================== */}
+      {/* BACKGROUND */}
+      {/* ======================================== */}
+
+      {/* GRID */}
+      <div
+        className="
+          absolute
+          inset-0
+
+          opacity-[0.03]
+
+          bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)]
+          bg-[size:60px_60px]
+        "
+      />
+
+      {/* GLOW 1 */}
       <div
         className="
           absolute
@@ -30,6 +91,7 @@ export default function About() {
         "
       />
 
+      {/* GLOW 2 */}
       <div
         className="
           absolute
@@ -47,20 +109,16 @@ export default function About() {
         "
       />
 
-      {/* GRID */}
-      <div
-        className="
-          absolute
-          inset-0
-          opacity-[0.03]
+      {/* ======================================== */}
+      {/* MAIN CONTAINER */}
+      {/* ======================================== */}
 
-          bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)]
-          bg-[size:60px_60px]
-        "
-      />
+      <div className="relative z-10 max-w-7xl mx-auto">
 
-      <div className="max-w-7xl mx-auto relative z-10">
+        {/* ======================================== */}
         {/* HEADING */}
+        {/* ======================================== */}
+
         <motion.div
           initial={{
             opacity: 0,
@@ -76,38 +134,102 @@ export default function About() {
           }}
           className="text-center"
         >
+          <div
+            className="
+              inline-flex
+              items-center
+              gap-2
+
+              px-5
+              py-2
+
+              rounded-full
+
+              border
+              border-white/10
+
+              bg-white/[0.04]
+
+              backdrop-blur-xl
+
+              text-sm
+              text-gray-300
+            "
+          >
+            <span
+              className="
+                w-2
+                h-2
+
+                rounded-full
+
+                bg-blue-500
+
+                animate-pulse
+              "
+            />
+
+            About Me
+          </div>
+
           <h2
             className="
+              mt-6
+
               text-4xl
               md:text-5xl
+              lg:text-6xl
 
               font-bold
+
+              leading-tight
 
               text-white
             "
           >
-            About Me
+            Turning Ideas Into
+            <br />
+
+            <span
+              className="
+                bg-gradient-to-r
+                from-blue-400
+                via-cyan-300
+                to-indigo-400
+
+                text-transparent
+                bg-clip-text
+              "
+            >
+              Intelligent Products
+            </span>
           </h2>
 
           <p
             className="
-              mt-4
+              mt-6
+
+              max-w-3xl
+              mx-auto
 
               text-gray-400
 
-              max-w-2xl
-              mx-auto
-
               leading-relaxed
+
+              text-base
+              md:text-lg
             "
           >
-            Passionate about building scalable digital
-            products powered by AI, automation, and
-            modern web technologies.
+            I build scalable digital experiences powered
+            by AI, automation, analytics, and modern
+            full-stack technologies.
           </p>
         </motion.div>
 
-        {/* MAIN GRID */}
+        {/* ======================================== */}
+        {/* CONTENT */}
+        {/* ======================================== */}
+
         <div
           className="
             mt-20
@@ -115,15 +237,18 @@ export default function About() {
             grid
             lg:grid-cols-2
 
-            gap-16
+            gap-20
             items-center
           "
         >
-          {/* LEFT SIDE IMAGE */}
+          {/* ======================================== */}
+          {/* LEFT SIDE */}
+          {/* ======================================== */}
+
           <motion.div
             initial={{
               opacity: 0,
-              x: -40,
+              x: -50,
             }}
             whileInView={{
               opacity: 1,
@@ -145,34 +270,34 @@ export default function About() {
               className="
                 absolute
 
-                w-[340px]
-                h-[340px]
+                w-[260px]
+                h-[260px]
 
                 rounded-full
 
                 bg-blue-500/20
 
-                blur-[100px]
+                blur-[90px]
 
                 animate-pulse
               "
             />
 
-            {/* ROTATING RING */}
+            {/* OUTER RING */}
             <motion.div
               animate={{
                 rotate: 360,
               }}
               transition={{
-                duration: 18,
+                duration: 20,
                 repeat: Infinity,
                 ease: "linear",
               }}
               className="
                 absolute
 
-                w-[380px]
-                h-[380px]
+                w-[320px]
+                h-[320px]
 
                 rounded-full
 
@@ -188,15 +313,15 @@ export default function About() {
                 rotate: -360,
               }}
               transition={{
-                duration: 25,
+                duration: 30,
                 repeat: Infinity,
                 ease: "linear",
               }}
               className="
                 absolute
 
-                w-[430px]
-                h-[430px]
+                w-[370px]
+                h-[370px]
 
                 rounded-full
 
@@ -208,7 +333,7 @@ export default function About() {
             {/* IMAGE CARD */}
             <motion.div
               whileHover={{
-                y: -10,
+                y: -8,
                 scale: 1.02,
               }}
               transition={{
@@ -217,15 +342,16 @@ export default function About() {
               className="
                 relative
 
-                w-[300px]
-                sm:w-[360px]
+                w-[260px]
+                sm:w-[300px]
+                md:w-[340px]
 
-                rounded-[40px]
+                rounded-[38px]
 
                 border
                 border-white/10
 
-                bg-white/[0.03]
+                bg-white/[0.04]
 
                 backdrop-blur-2xl
 
@@ -234,7 +360,7 @@ export default function About() {
                 shadow-[0_20px_80px_rgba(0,0,0,0.45)]
               "
             >
-              {/* TOP LIGHT */}
+              {/* LIGHT EFFECT */}
               <div
                 className="
                   absolute
@@ -242,6 +368,7 @@ export default function About() {
 
                   bg-gradient-to-b
                   from-white/10
+                  via-transparent
                   to-transparent
 
                   pointer-events-none
@@ -253,7 +380,7 @@ export default function About() {
                 src="/Anish.png"
                 alt="Anish Patnaik"
                 animate={{
-                  y: [0, -10, 0],
+                  y: [0, -8, 0],
                 }}
                 transition={{
                   duration: 5,
@@ -267,11 +394,26 @@ export default function About() {
                   w-full
                   h-full
 
-                  object-cover
+                  object-contain
                 "
               />
 
-              {/* BOTTOM BADGE */}
+              {/* OVERLAY */}
+              <div
+                className="
+                  absolute
+                  inset-0
+
+                  bg-gradient-to-t
+                  from-[#050816]
+                  via-transparent
+                  to-transparent
+
+                  opacity-70
+                "
+              />
+
+              {/* BADGE */}
               <div
                 className="
                   absolute
@@ -295,7 +437,7 @@ export default function About() {
                   text-sm
                   font-medium
 
-                  shadow-lg
+                  whitespace-nowrap
                 "
               >
                 Full Stack Developer • Data Analyst
@@ -305,7 +447,7 @@ export default function About() {
             {/* FLOATING CARD */}
             <motion.div
               animate={{
-                y: [0, -12, 0],
+                y: [0, -10, 0],
               }}
               transition={{
                 duration: 4,
@@ -313,8 +455,9 @@ export default function About() {
               }}
               className="
                 absolute
-                top-10
-                -left-6
+                top-6
+                -left-2
+                md:-left-10
 
                 hidden
                 md:flex
@@ -371,13 +514,73 @@ export default function About() {
                 </p>
               </div>
             </motion.div>
+
+            {/* FLOATING EXPERIENCE CARD */}
+            <motion.div
+              animate={{
+                y: [0, 12, 0],
+              }}
+              transition={{
+                duration: 5,
+                repeat: Infinity,
+              }}
+              className="
+                absolute
+                bottom-10
+                -right-2
+                md:-right-8
+
+                hidden
+                md:block
+
+                px-6
+                py-5
+
+                rounded-3xl
+
+                border
+                border-white/10
+
+                bg-white/[0.05]
+
+                backdrop-blur-xl
+
+                shadow-xl
+              "
+            >
+              <h3
+                className="
+                  text-3xl
+                  font-bold
+
+                  text-white
+                "
+              >
+                8+
+              </h3>
+
+              <p
+                className="
+                  mt-1
+
+                  text-sm
+
+                  text-gray-400
+                "
+              >
+                Years Experience
+              </p>
+            </motion.div>
           </motion.div>
 
-          {/* RIGHT SIDE CONTENT */}
+          {/* ======================================== */}
+          {/* RIGHT SIDE */}
+          {/* ======================================== */}
+
           <motion.div
             initial={{
               opacity: 0,
-              x: 40,
+              x: 50,
             }}
             whileInView={{
               opacity: 1,
@@ -389,7 +592,7 @@ export default function About() {
             }}
             className="space-y-8"
           >
-            {/* STORY */}
+            {/* INTRO */}
             <div
               className="
                 space-y-5
@@ -397,6 +600,7 @@ export default function About() {
                 text-gray-400
 
                 leading-relaxed
+
                 text-[15px]
                 md:text-base
               "
@@ -406,9 +610,9 @@ export default function About() {
                 <span className="text-white font-semibold">
                   Data Analyst & Full Stack Developer
                 </span>{" "}
-                focused on building scalable,
-                real-world web applications powered
-                by data and automation.
+                focused on building scalable, modern
+                applications powered by data,
+                automation, and AI-driven experiences.
               </p>
 
               <p>
@@ -418,56 +622,89 @@ export default function About() {
                 </span>{" "}
                 and running my own institute, I
                 developed strong communication,
-                leadership, and problem-solving
-                skills that now power my development
-                journey.
+                leadership, and analytical thinking.
               </p>
 
               <p>
                 I transitioned into tech and
                 specialized in the{" "}
                 <span className="text-white font-semibold">
-                  MERN stack, data analysis, and AI
-                  tools
+                  MERN stack, AI systems, and data
+                  analytics
                 </span>
-                , building applications that combine
-                logic, design, and intelligence.
+                , creating products that merge logic,
+                design, and scalability.
               </p>
 
               <p>
-                My goal is to create systems that
-                merge{" "}
+                My mission is to build digital systems
+                that combine{" "}
                 <span className="text-white font-semibold">
-                  data + AI + web development
+                  AI + Data + Modern Development
                 </span>{" "}
-                to deliver real business value and
-                automation.
+                to deliver real-world business impact.
               </p>
+            </div>
+
+            {/* STATS */}
+            <div
+              className="
+                grid
+                grid-cols-3
+
+                gap-4
+              "
+            >
+              {stats.map((item, index) => (
+                <div
+                  key={index}
+                  className="
+                    rounded-3xl
+
+                    border
+                    border-white/10
+
+                    bg-white/[0.04]
+
+                    backdrop-blur-xl
+
+                    p-5
+
+                    text-center
+                  "
+                >
+                  <h3
+                    className="
+                      text-2xl
+                      md:text-3xl
+
+                      font-bold
+
+                      text-white
+                    "
+                  >
+                    {item.value}
+                  </h3>
+
+                  <p
+                    className="
+                      mt-2
+
+                      text-xs
+                      md:text-sm
+
+                      text-gray-400
+                    "
+                  >
+                    {item.label}
+                  </p>
+                </div>
+              ))}
             </div>
 
             {/* SKILLS */}
             <div className="space-y-5">
-              {/* CARD */}
-              {[
-                {
-                  title: "📊 Data Analyst",
-                  desc:
-                    "Excel • SQL • Power BI • Data Visualization • EDA • Reporting",
-                },
-
-                {
-                  title:
-                    "💻 Full Stack Developer",
-                  desc:
-                    "React • Node.js • Express • MongoDB • REST APIs • Auth Systems",
-                },
-
-                {
-                  title: "🤖 AI Integration",
-                  desc:
-                    "OpenAI API • Prompt Engineering • AI Tools • Automation Systems",
-                },
-              ].map((item, index) => (
+              {skills.map((item, index) => (
                 <motion.div
                   key={index}
                   whileHover={{
@@ -483,7 +720,7 @@ export default function About() {
 
                     p-6
 
-                    rounded-[28px]
+                    rounded-[30px]
 
                     border
                     border-white/10
@@ -516,28 +753,61 @@ export default function About() {
                     "
                   />
 
-                  <div className="relative z-10">
-                    <h3
+                  <div
+                    className="
+                      relative
+                      z-10
+
+                      flex
+                      items-start
+                      gap-4
+                    "
+                  >
+                    <div
                       className="
-                        text-white
-                        font-semibold
-                        text-lg
+                        w-14
+                        h-14
+
+                        rounded-2xl
+
+                        bg-blue-500/10
+
+                        flex
+                        items-center
+                        justify-center
+
+                        text-2xl
+
+                        shrink-0
                       "
                     >
-                      {item.title}
-                    </h3>
+                      {item.icon}
+                    </div>
 
-                    <p
-                      className="
-                        text-gray-400
-                        text-sm
+                    <div>
+                      <h3
+                        className="
+                          text-white
+                          font-semibold
+                          text-lg
+                        "
+                      >
+                        {item.title}
+                      </h3>
 
-                        mt-3
-                        leading-7
-                      "
-                    >
-                      {item.desc}
-                    </p>
+                      <p
+                        className="
+                          mt-2
+
+                          text-sm
+                          leading-7
+
+                          text-gray-400
+                        "
+                      >
+                        {item.desc}
+                      </p>
+                    </div>
                   </div>
                 </motion.div>
               ))}
