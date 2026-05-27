@@ -33,16 +33,6 @@ export default function Projects() {
       github: "",
     },
     {
-      title: "HR Attrition Dashboard",
-      description:
-        "Data analytics dashboard to visualize employee attrition trends and business insights.",
-      tech: ["Power BI", "Excel", "Data Analysis"],
-      type: "Data Analytics",
-      featured: false,
-      live: "",
-      github: "https://github.com/Anshcodeify45/Hr_Attrition_PowerBi",
-    },
-    {
       title: "Pokémon Explorer",
       description:
         "Interactive Pokémon explorer using API integration with search, filters, and dynamic UI.",
@@ -62,6 +52,23 @@ export default function Projects() {
       live: "https://quote-app-soullines.onrender.com/",
       github: "",
     },
+    {
+        title: "Neuro-SaaS – AI Analytics Dashboard",
+        description:
+          "Modern full-stack AI-powered analytics dashboard featuring real-time insights, authentication, activity tracking, interactive charts, and responsive SaaS UI.",
+        tech: [
+          "React",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "Tailwind CSS",
+          "Framer Motion",
+        ],
+        type: "AI SaaS Platform",
+        featured: true,
+        live: "https://neuro-saas.vercel.app/",
+        github: "https://github.com/Anshcodeify45/Neuro_Saas",
+},
   ];
 
   return (
