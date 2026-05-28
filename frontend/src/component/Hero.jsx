@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import {
   ArrowRight,
-  Github,
-  Linkedin,
+  GithubIcon,
+  LinkedinIcon,
   Download,
   Sparkles,
   MousePointer2,
@@ -566,7 +566,7 @@ export default function Hero() {
               duration-300
             "
           >
-            <Github size={22} />
+            <GithubIcon size={22} />
           </a>
 
           {/* LINKEDIN */}
@@ -593,7 +593,7 @@ export default function Hero() {
               duration-300
             "
           >
-            <Linkedin size={22} />
+            <LinkedinIcon size={22} />
           </a>
 
           {/* CONTACT */}
