@@ -1,43 +1,32 @@
 import { motion } from "framer-motion";
+import {
+  Code2,
+  Database,
+  BrainCircuit,
+  ArrowUpRight,
+} from "lucide-react";
 
 export default function About() {
   const skills = [
     {
       title: "Full Stack Development",
-      icon: "💻",
+      icon: <Code2 size={24} />,
       desc:
-        "React • Node.js • Express • MongoDB • REST APIs • Authentication",
+        "Building scalable web applications using React, Node.js, Express, MongoDB, APIs & Authentication.",
     },
 
     {
       title: "Data Analytics",
-      icon: "📊",
+      icon: <Database size={24} />,
       desc:
-        "Excel • SQL • Power BI • Data Visualization • Reporting • Insights",
+        "Creating data-driven insights with SQL, Excel, Power BI, dashboards & visualization systems.",
     },
 
     {
       title: "AI Integration",
-      icon: "🤖",
+      icon: <BrainCircuit size={24} />,
       desc:
-        "OpenAI API • AI Automation • Prompt Engineering • SaaS Systems",
-    },
-  ];
-
-  const stats = [
-    {
-      value: "20+",
-      label: "Projects Built",
-    },
-
-    {
-      value: "MERN",
-      label: "Tech Stack",
-    },
-
-    {
-      value: "AI",
-      label: "Powered Solutions",
+        "Integrating OpenAI APIs, AI automation, prompt engineering & intelligent workflows.",
     },
   ];
 
@@ -47,442 +36,192 @@ export default function About() {
       className="
         relative
         overflow-hidden
+        bg-[#030712]
         py-24
         lg:py-32
         px-6
-        bg-[#050816]
       "
     >
       {/* ================= BACKGROUND ================= */}
 
+      {/* GRID */}
       <div
         className="
           absolute
           inset-0
-          opacity-[0.03]
+          opacity-[0.04]
           bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)]
-          bg-[size:60px_60px]
+          bg-[size:70px_70px]
         "
       />
 
+      {/* LEFT GLOW */}
       <div
         className="
           absolute
-          top-[-120px]
-          left-[-100px]
-          w-[320px]
-          h-[320px]
+          top-0
+          left-0
+          w-[500px]
+          h-[500px]
+          bg-blue-600/20
+          blur-[180px]
           rounded-full
-          bg-blue-600/10
-          blur-[140px]
         "
       />
 
+      {/* RIGHT GLOW */}
       <div
         className="
           absolute
-          bottom-[-140px]
-          right-[-120px]
-          w-[380px]
-          h-[380px]
-          rounded-full
+          bottom-0
+          right-0
+          w-[500px]
+          h-[500px]
           bg-cyan-500/10
-          blur-[160px]
+          blur-[180px]
+          rounded-full
         "
       />
-
-      {/* ================= MAIN ================= */}
 
       <div className="relative z-10 max-w-7xl mx-auto">
 
-        {/* ================= HEADING ================= */}
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center"
-        >
-          <div
-            className="
-              inline-flex
-              items-center
-              gap-2
-              px-5
-              py-2
-              rounded-full
-              border
-              border-white/10
-              bg-white/[0.04]
-              backdrop-blur-xl
-              text-sm
-              text-gray-300
-            "
-          >
-            <span
-              className="
-                w-2
-                h-2
-                rounded-full
-                bg-cyan-400
-                animate-pulse
-              "
-            />
-
-            About Me
-          </div>
-
-          <h2
-            className="
-              mt-6
-              text-4xl
-              md:text-5xl
-              lg:text-6xl
-              font-bold
-              leading-tight
-              text-white
-            "
-          >
-            Building Modern &
-            <br />
-
-            <span
-              className="
-                bg-gradient-to-r
-                from-blue-400
-                via-cyan-300
-                to-indigo-400
-                text-transparent
-                bg-clip-text
-              "
-            >
-              Intelligent Digital Products
-            </span>
-          </h2>
-
-          <p
-            className="
-              mt-6
-              max-w-3xl
-              mx-auto
-              text-gray-400
-              leading-relaxed
-              text-base
-              md:text-lg
-            "
-          >
-            Passionate about building scalable web
-            applications, AI-powered systems, and
-            modern digital experiences using the
-            latest technologies.
-          </p>
-        </motion.div>
-
-        {/* ================= CONTENT ================= */}
+        {/* ================= MAIN GRID ================= */}
 
         <div
           className="
-            mt-20
             grid
             lg:grid-cols-2
-            gap-20
+            gap-16
             items-center
           "
         >
-          {/* ================= LEFT ================= */}
+          {/* ===================================================== */}
+          {/* LEFT CONTENT */}
+          {/* ===================================================== */}
 
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="
-              relative
-              flex
-              justify-center
-            "
           >
-            {/* GLOW */}
+            {/* SMALL TAG */}
             <div
               className="
-                absolute
-                w-[260px]
-                h-[260px]
-                rounded-full
-                bg-blue-500/20
-                blur-[90px]
-              "
-            />
-
-            {/* RING 1 */}
-            <motion.div
-              animate={{ rotate: 360 }}
-              transition={{
-                duration: 20,
-                repeat: Infinity,
-                ease: "linear",
-              }}
-              className="
-                absolute
-                w-[320px]
-                h-[320px]
-                rounded-full
-                border
-                border-dashed
-                border-blue-500/20
-              "
-            />
-
-            {/* RING 2 */}
-            <motion.div
-              animate={{ rotate: -360 }}
-              transition={{
-                duration: 30,
-                repeat: Infinity,
-                ease: "linear",
-              }}
-              className="
-                absolute
-                w-[370px]
-                h-[370px]
-                rounded-full
-                border
-                border-white/5
-              "
-            />
-
-            {/* IMAGE CARD */}
-            <motion.div
-              whileHover={{
-                y: -8,
-                scale: 1.02,
-              }}
-              transition={{ duration: 0.3 }}
-              className="
-                relative
-                w-[260px]
-                sm:w-[300px]
-                md:w-[340px]
-                rounded-[38px]
-                border
-                border-white/10
-                bg-white/[0.04]
-                backdrop-blur-2xl
-                overflow-hidden
-                shadow-[0_20px_80px_rgba(0,0,0,0.45)]
-              "
-            >
-              {/* LIGHT */}
-              <div
-                className="
-                  absolute
-                  inset-0
-                  bg-gradient-to-b
-                  from-white/10
-                  via-transparent
-                  to-transparent
-                  pointer-events-none
-                "
-              />
-
-              {/* IMAGE */}
-              <motion.img
-                src="/Anish.png"
-                alt="Anish Patnaik"
-                animate={{
-                  y: [0, -8, 0],
-                }}
-                transition={{
-                  duration: 5,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-                className="
-                  relative
-                  z-10
-                  w-full
-                  h-full
-                  object-contain
-                "
-              />
-
-              {/* OVERLAY */}
-              <div
-                className="
-                  absolute
-                  inset-0
-                  bg-gradient-to-t
-                  from-[#050816]
-                  via-transparent
-                  to-transparent
-                  opacity-70
-                "
-              />
-
-              {/* BADGE */}
-              <div
-                className="
-                  absolute
-                  bottom-5
-                  left-1/2
-                  -translate-x-1/2
-                  px-5
-                  py-2.5
-                  rounded-full
-                  border
-                  border-white/10
-                  bg-black/40
-                  backdrop-blur-xl
-                  text-white
-                  text-sm
-                  font-medium
-                  whitespace-nowrap
-                "
-              >
-                Full Stack Developer • AI Enthusiast
-              </div>
-            </motion.div>
-
-            {/* FLOATING CARD */}
-            <motion.div
-              animate={{
-                y: [0, -10, 0],
-              }}
-              transition={{
-                duration: 4,
-                repeat: Infinity,
-              }}
-              className="
-                absolute
-                top-6
-                -left-2
-                md:-left-10
-                hidden
-                md:flex
+                inline-flex
                 items-center
-                gap-3
+                gap-2
                 px-5
-                py-4
-                rounded-2xl
+                py-2
+                rounded-full
                 border
-                border-white/10
-                bg-white/[0.05]
+                border-blue-500/20
+                bg-blue-500/5
                 backdrop-blur-xl
-                shadow-xl
               "
             >
-              <div
-                className="
-                  w-3
-                  h-3
-                  rounded-full
-                  bg-green-400
-                  animate-pulse
-                "
-              />
+              <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
 
-              <div>
-                <p
-                  className="
-                    text-white
-                    text-sm
-                    font-semibold
-                  "
-                >
-                  Open to Opportunities
-                </p>
-
-                <p
-                  className="
-                    text-xs
-                    text-gray-400
-                  "
-                >
-                  Full Time • Freelance
-                </p>
-              </div>
-            </motion.div>
-          </motion.div>
-
-          {/* ================= RIGHT ================= */}
-
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="space-y-8"
-          >
-            {/* INTRO */}
-            <div
-              className="
-                space-y-5
-                text-gray-400
-                leading-relaxed
-                text-[15px]
-                md:text-base
-              "
-            >
-              <p>
-                I’m a{" "}
-                <span className="text-white font-semibold">
-                  Full Stack Developer
-                </span>{" "}
-                passionate about creating modern,
-                scalable, and user-focused digital
-                products.
-              </p>
-
-              <p>
-                My expertise includes{" "}
-                <span className="text-white font-semibold">
-                  MERN Stack Development,
-                  Data Analytics, and AI Integration
-                </span>
-                , allowing me to build smart and
-                efficient systems.
-              </p>
-
-              <p>
-                I enjoy transforming ideas into
-                impactful applications with clean UI,
-                powerful backend systems, and seamless
-                user experiences.
-              </p>
-
-              <p>
-                Focused on continuous learning,
-                innovation, and building products that
-                solve real-world problems.
+              <p className="text-sm tracking-[3px] text-gray-300 uppercase">
+                About Me
               </p>
             </div>
+
+            {/* HEADING */}
+            <h2
+              className="
+                mt-8
+                text-5xl
+                md:text-6xl
+                lg:text-7xl
+                font-bold
+                leading-[1.05]
+                text-white
+              "
+            >
+              Building Digital
+              <br />
+
+              <span
+                className="
+                  bg-gradient-to-r
+                  from-blue-400
+                  via-cyan-300
+                  to-blue-600
+                  text-transparent
+                  bg-clip-text
+                "
+              >
+                Products
+              </span>
+
+              <br />
+
+              That Make Impact
+            </h2>
+
+            {/* DESCRIPTION */}
+            <p
+              className="
+                mt-8
+                max-w-xl
+                text-gray-400
+                text-lg
+                leading-relaxed
+              "
+            >
+              I’m a Full Stack Developer and Data
+              Analyst focused on building scalable,
+              modern, and AI-powered digital
+              experiences with clean UI and powerful
+              backend systems.
+            </p>
 
             {/* STATS */}
             <div
               className="
+                mt-10
                 grid
                 grid-cols-3
-                gap-4
+                gap-5
               "
             >
-              {stats.map((item, index) => (
-                <div
+              {[
+                {
+                  value: "20+",
+                  label: "Projects",
+                },
+
+                {
+                  value: "MERN",
+                  label: "Stack",
+                },
+
+                {
+                  value: "AI",
+                  label: "Solutions",
+                },
+              ].map((item, index) => (
+                <motion.div
                   key={index}
+                  whileHover={{
+                    y: -5,
+                  }}
                   className="
                     rounded-3xl
                     border
                     border-white/10
-                    bg-white/[0.04]
+                    bg-white/[0.03]
                     backdrop-blur-xl
-                    p-5
+                    p-6
                     text-center
+                    transition-all
+                    duration-300
                   "
                 >
                   <h3
                     className="
-                      text-2xl
-                      md:text-3xl
+                      text-3xl
                       font-bold
                       text-white
                     "
@@ -493,42 +232,40 @@ export default function About() {
                   <p
                     className="
                       mt-2
-                      text-xs
-                      md:text-sm
+                      text-sm
                       text-gray-400
                     "
                   >
                     {item.label}
                   </p>
-                </div>
+                </motion.div>
               ))}
             </div>
 
             {/* SKILLS */}
-            <div className="space-y-5">
+            <div className="mt-10 space-y-5">
               {skills.map((item, index) => (
                 <motion.div
                   key={index}
                   whileHover={{
-                    y: -5,
-                    scale: 1.01,
+                    x: 10,
                   }}
-                  transition={{ duration: 0.25 }}
                   className="
+                    group
                     relative
                     overflow-hidden
-                    p-6
-                    rounded-[30px]
+                    rounded-3xl
                     border
                     border-white/10
-                    bg-white/[0.04]
+                    bg-white/[0.03]
                     backdrop-blur-xl
-                    hover:border-blue-500/30
+                    p-6
                     transition-all
                     duration-300
+                    hover:border-blue-500/30
                   "
                 >
-                  {/* CARD GLOW */}
+                  {/* GLOW */}
                   <div
                     className="
                       absolute
@@ -537,7 +274,7 @@ export default function About() {
                       w-40
                       h-40
                       bg-blue-500/10
-                      blur-[90px]
+                      blur-[100px]
                       rounded-full
                     "
                   />
@@ -548,50 +285,324 @@ export default function About() {
                       z-10
                       flex
                       items-start
+                      justify-between
                       gap-4
                     "
                   >
-                    <div
-                      className="
-                        w-14
-                        h-14
-                        rounded-2xl
-                        bg-blue-500/10
-                        flex
-                        items-center
-                        justify-center
-                        text-2xl
-                        shrink-0
-                      "
-                    >
-                      {item.icon}
+                    <div className="flex gap-4">
+                      {/* ICON */}
+                      <div
+                        className="
+                          w-14
+                          h-14
+                          rounded-2xl
+                          bg-gradient-to-br
+                          from-blue-500
+                          to-cyan-400
+                          flex
+                          items-center
+                          justify-center
+                          text-white
+                          shadow-lg
+                          shadow-blue-500/20
+                        "
+                      >
+                        {item.icon}
+                      </div>
+
+                      {/* TEXT */}
+                      <div>
+                        <h3
+                          className="
+                            text-xl
+                            font-semibold
+                            text-white
+                          "
+                        >
+                          {item.title}
+                        </h3>
+
+                        <p
+                          className="
+                            mt-2
+                            text-gray-400
+                            leading-7
+                            text-sm
+                            max-w-lg
+                          "
+                        >
+                          {item.desc}
+                        </p>
+                      </div>
                     </div>
 
-                    <div>
-                      <h3
-                        className="
-                          text-white
-                          font-semibold
-                          text-lg
-                        "
-                      >
-                        {item.title}
-                      </h3>
-
-                      <p
-                        className="
-                          mt-2
-                          text-sm
-                          leading-7
-                          text-gray-400
-                        "
-                      >
-                        {item.desc}
-                      </p>
+                    {/* ARROW */}
+                    <div
+                      className="
+                        opacity-0
+                        group-hover:opacity-100
+                        transition-all
+                        duration-300
+                        text-white
+                      "
+                    >
+                      <ArrowUpRight size={22} />
                     </div>
                   </div>
                 </motion.div>
               ))}
+            </div>
+
+            {/* CTA */}
+            <div
+              className="
+                mt-10
+                flex
+                items-center
+                gap-6
+                flex-wrap
+              "
+            >
+              <button
+                className="
+                  px-8
+                  py-4
+                  rounded-2xl
+                  bg-gradient-to-r
+                  from-blue-600
+                  to-cyan-500
+                  text-white
+                  font-semibold
+                  shadow-lg
+                  shadow-blue-500/20
+                  hover:scale-105
+                  transition-all
+                  duration-300
+                "
+              >
+                Let’s Connect
+              </button>
+
+              <div className="flex items-center gap-3">
+                <span className="w-3 h-3 rounded-full bg-green-400 animate-pulse" />
+
+                <p className="text-gray-400">
+                  Available for Freelance & Full Time
+                </p>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* ===================================================== */}
+          {/* RIGHT IMAGE SECTION */}
+          {/* ===================================================== */}
+
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="relative flex justify-center"
+          >
+            {/* OUTER CARD */}
+            <div
+              className="
+                relative
+                w-full
+                max-w-[620px]
+                h-[820px]
+                rounded-[40px]
+                border
+                border-white/10
+                bg-gradient-to-b
+                from-white/[0.06]
+                to-white/[0.02]
+                backdrop-blur-2xl
+                overflow-hidden
+                shadow-[0_30px_120px_rgba(0,0,0,0.6)]
+              "
+            >
+              {/* INNER GLOW */}
+              <div
+                className="
+                  absolute
+                  inset-0
+                  bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.18),transparent_70%)]
+                "
+              />
+
+              {/* CIRCLE RINGS */}
+              <motion.div
+                animate={{
+                  rotate: 360,
+                }}
+                transition={{
+                  duration: 35,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
+                className="
+                  absolute
+                  inset-0
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <div
+                  className="
+                    w-[500px]
+                    h-[500px]
+                    rounded-full
+                    border
+                    border-dashed
+                    border-blue-500/20
+                  "
+                />
+              </motion.div>
+
+              <motion.div
+                animate={{
+                  rotate: -360,
+                }}
+                transition={{
+                  duration: 45,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
+                className="
+                  absolute
+                  inset-0
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <div
+                  className="
+                    w-[650px]
+                    h-[650px]
+                    rounded-full
+                    border
+                    border-white/5
+                  "
+                />
+              </motion.div>
+
+              {/* STATUS CARD */}
+              <div
+                className="
+                  absolute
+                  top-8
+                  right-8
+                  z-20
+                  flex
+                  items-center
+                  gap-3
+                  px-5
+                  py-4
+                  rounded-2xl
+                  border
+                  border-white/10
+                  bg-[#0b1220]/80
+                  backdrop-blur-xl
+                "
+              >
+                <span className="w-3 h-3 rounded-full bg-green-400 animate-pulse" />
+
+                <div>
+                  <h4 className="text-white font-semibold text-sm">
+                    Open to Opportunities
+                  </h4>
+
+                  <p className="text-xs text-gray-400">
+                    Full Time • Freelance
+                  </p>
+                </div>
+              </div>
+
+              {/* IMAGE */}
+              <motion.img
+                src="/Anish.png"
+                alt="Anish"
+                animate={{
+                  y: [0, -12, 0],
+                }}
+                transition={{
+                  duration: 6,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+                className="
+                  absolute
+                  bottom-0
+                  left-1/2
+                  -translate-x-1/2
+                  h-[92%]
+                  object-contain
+                  z-10
+                  drop-shadow-[0_20px_80px_rgba(59,130,246,0.35)]
+                "
+              />
+
+              {/* BOTTOM INFO CARD */}
+              <div
+                className="
+                  absolute
+                  bottom-8
+                  left-1/2
+                  -translate-x-1/2
+                  w-[85%]
+                  rounded-3xl
+                  border
+                  border-white/10
+                  bg-[#0b1220]/70
+                  backdrop-blur-2xl
+                  p-6
+                  flex
+                  items-center
+                  gap-5
+                  z-20
+                "
+              >
+                <div
+                  className="
+                    w-16
+                    h-16
+                    rounded-2xl
+                    bg-blue-500/10
+                    border
+                    border-blue-500/20
+                    flex
+                    items-center
+                    justify-center
+                    text-blue-400
+                  "
+                >
+                  <Code2 size={28} />
+                </div>
+
+                <div>
+                  <h3
+                    className="
+                      text-2xl
+                      font-semibold
+                      text-white
+                    "
+                  >
+                    Full Stack Developer
+                  </h3>
+
+                  <p
+                    className="
+                      mt-1
+                      text-gray-400
+                    "
+                  >
+                    Data Analyst • AI Enthusiast
+                  </p>
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
