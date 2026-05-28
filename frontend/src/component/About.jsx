@@ -88,7 +88,7 @@ export default function About() {
         "
       />
 
-      {/* GLOW LEFT */}
+      {/* LEFT GLOW */}
       <div
         className="
           absolute
@@ -102,7 +102,7 @@ export default function About() {
         "
       />
 
-      {/* GLOW RIGHT */}
+      {/* RIGHT GLOW */}
       <div
         className="
           absolute
@@ -117,7 +117,7 @@ export default function About() {
       />
 
       {/* ========================================= */}
-      {/* MAIN CONTAINER */}
+      {/* MAIN */}
       {/* ========================================= */}
 
       <div className="relative z-10 max-w-7xl mx-auto">
@@ -126,7 +126,7 @@ export default function About() {
           className="
             grid
             lg:grid-cols-2
-            gap-16
+            gap-20
             items-center
           "
         >
@@ -154,12 +154,17 @@ export default function About() {
                 inline-flex
                 items-center
                 gap-2
+
                 px-5
                 py-2
+
                 rounded-full
+
                 border
                 border-blue-500/20
+
                 bg-blue-500/5
+
                 backdrop-blur-xl
               "
             >
@@ -167,8 +172,11 @@ export default function About() {
                 className="
                   w-2
                   h-2
+
                   rounded-full
+
                   bg-blue-500
+
                   animate-pulse
                 "
               />
@@ -177,7 +185,9 @@ export default function About() {
                 className="
                   text-sm
                   tracking-[3px]
+
                   text-gray-300
+
                   uppercase
                 "
               >
@@ -189,11 +199,15 @@ export default function About() {
             <h2
               className="
                 mt-8
+
                 text-5xl
                 md:text-6xl
                 lg:text-7xl
+
                 font-bold
+
                 leading-[1.05]
+
                 text-white
               "
             >
@@ -206,6 +220,7 @@ export default function About() {
                   from-blue-400
                   via-cyan-300
                   to-blue-600
+
                   text-transparent
                   bg-clip-text
                 "
@@ -222,9 +237,12 @@ export default function About() {
             <p
               className="
                 mt-8
+
                 max-w-xl
+
                 text-gray-400
                 text-lg
+
                 leading-relaxed
               "
             >
@@ -242,8 +260,10 @@ export default function About() {
             <div
               className="
                 mt-10
+
                 grid
                 grid-cols-3
+
                 gap-5
               "
             >
@@ -255,12 +275,18 @@ export default function About() {
                   }}
                   className="
                     rounded-3xl
+
                     border
                     border-white/10
+
                     bg-white/[0.03]
+
                     backdrop-blur-xl
+
                     p-6
+
                     text-center
+
                     transition-all
                     duration-300
                   "
@@ -269,6 +295,7 @@ export default function About() {
                     className="
                       text-3xl
                       font-bold
+
                       text-white
                     "
                   >
@@ -278,7 +305,9 @@ export default function About() {
                   <p
                     className="
                       mt-2
+
                       text-sm
+
                       text-gray-400
                     "
                   >
@@ -302,15 +331,23 @@ export default function About() {
                   className="
                     group
                     relative
+
                     overflow-hidden
+
                     rounded-3xl
+
                     border
                     border-white/10
+
                     bg-white/[0.03]
+
                     backdrop-blur-xl
+
                     p-6
+
                     transition-all
                     duration-300
+
                     hover:border-blue-500/30
                   "
                 >
@@ -320,10 +357,14 @@ export default function About() {
                       absolute
                       top-0
                       right-0
+
                       w-40
                       h-40
+
                       bg-blue-500/10
+
                       blur-[100px]
+
                       rounded-full
                     "
                   />
@@ -332,9 +373,11 @@ export default function About() {
                     className="
                       relative
                       z-10
+
                       flex
                       items-start
                       justify-between
+
                       gap-4
                     "
                   >
@@ -344,16 +387,22 @@ export default function About() {
                         className="
                           w-14
                           h-14
+
                           rounded-2xl
+
                           bg-gradient-to-br
                           from-blue-500
                           to-cyan-400
+
                           flex
                           items-center
                           justify-center
+
                           text-white
+
                           shadow-lg
                           shadow-blue-500/20
+
                           shrink-0
                         "
                       >
@@ -366,6 +415,7 @@ export default function About() {
                           className="
                             text-xl
                             font-semibold
+
                             text-white
                           "
                         >
@@ -375,9 +425,12 @@ export default function About() {
                         <p
                           className="
                             mt-2
+
                             text-gray-400
+
                             leading-7
                             text-sm
+
                             max-w-lg
                           "
                         >
@@ -391,8 +444,10 @@ export default function About() {
                       className="
                         opacity-0
                         group-hover:opacity-100
+
                         transition-all
                         duration-300
+
                         text-white
                       "
                     >
@@ -410,9 +465,11 @@ export default function About() {
             <div
               className="
                 mt-10
+
                 flex
                 items-center
                 gap-6
+
                 flex-wrap
               "
             >
@@ -422,16 +479,22 @@ export default function About() {
                 className="
                   px-8
                   py-4
+
                   rounded-2xl
+
                   bg-gradient-to-r
                   from-blue-600
                   to-cyan-500
+
                   text-white
                   font-semibold
+
                   shadow-lg
                   shadow-blue-500/20
+
                   hover:scale-105
                   hover:shadow-blue-500/40
+
                   transition-all
                   duration-300
                 "
@@ -445,8 +508,11 @@ export default function About() {
                   className="
                     w-3
                     h-3
+
                     rounded-full
+
                     bg-green-400
+
                     animate-pulse
                   "
                 />
@@ -482,112 +548,95 @@ export default function About() {
               className="
                 relative
                 w-full
-                max-w-[500px]
-                h-[680px]
-                rounded-[36px]
+                max-w-[480px]
+                h-[620px]
+
+                rounded-[38px]
+
                 border
                 border-white/10
-                bg-gradient-to-b
-                from-white/[0.06]
-                to-white/[0.02]
-                backdrop-blur-2xl
+
+                bg-[linear-gradient(180deg,rgba(15,23,42,0.95)_0%,rgba(3,7,18,0.98)_100%)]
+
                 overflow-hidden
-                shadow-[0_30px_120px_rgba(0,0,0,0.6)]
+
+                shadow-[0_30px_120px_rgba(0,0,0,0.7)]
+                backdrop-blur-3xl
               "
             >
-              {/* INNER GLOW */}
+              {/* BLUE GLOW */}
               <div
                 className="
                   absolute
-                  inset-0
-                  bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.18),transparent_70%)]
+                  top-[-120px]
+                  left-1/2
+                  -translate-x-1/2
+
+                  w-[400px]
+                  h-[400px]
+
+                  rounded-full
+
+                  bg-blue-500/20
+
+                  blur-[120px]
                 "
               />
 
-              {/* RING 1 */}
-              <motion.div
-                animate={{
-                  rotate: 360,
-                }}
-                transition={{
-                  duration: 35,
-                  repeat: Infinity,
-                  ease: "linear",
-                }}
-                className="
-                  absolute
-                  inset-0
-                  flex
-                  items-center
-                  justify-center
-                "
-              >
-                <div
-                  className="
-                    w-[380px]
-                    h-[380px]
-                    rounded-full
-                    border
-                    border-dashed
-                    border-blue-500/20
-                  "
-                />
-              </motion.div>
-
-              {/* RING 2 */}
-              <motion.div
-                animate={{
-                  rotate: -360,
-                }}
-                transition={{
-                  duration: 45,
-                  repeat: Infinity,
-                  ease: "linear",
-                }}
-                className="
-                  absolute
-                  inset-0
-                  flex
-                  items-center
-                  justify-center
-                "
-              >
-                <div
-                  className="
-                    w-[500px]
-                    h-[500px]
-                    rounded-full
-                    border
-                    border-white/5
-                  "
-                />
-              </motion.div>
-
-              {/* STATUS CARD */}
+              {/* INNER BORDER */}
               <div
                 className="
                   absolute
-                  top-6
-                  right-6
-                  z-20
+                  inset-[1px]
+
+                  rounded-[38px]
+
+                  border
+                  border-white/[0.04]
+                "
+              />
+
+              {/* STATUS CARD */}
+              <motion.div
+                animate={{
+                  y: [0, -6, 0],
+                }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                }}
+                className="
+                  absolute
+                  top-5
+                  right-5
+                  z-30
+
                   flex
                   items-center
                   gap-3
-                  px-4
+
+                  px-5
                   py-3
+
                   rounded-2xl
+
                   border
                   border-white/10
-                  bg-[#0b1220]/80
-                  backdrop-blur-xl
+
+                  bg-[#0B1120]/80
+
+                  backdrop-blur-2xl
                 "
               >
                 <span
                   className="
                     w-3
                     h-3
+
                     rounded-full
+
                     bg-green-400
+
                     animate-pulse
                   "
                 />
@@ -596,8 +645,8 @@ export default function About() {
                   <h4
                     className="
                       text-white
-                      font-semibold
                       text-sm
+                      font-semibold
                     "
                   >
                     Open to Opportunities
@@ -612,95 +661,246 @@ export default function About() {
                     Full Time • Freelance
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
-              {/* IMAGE */}
-              <motion.img
-                src="/Anish.png"
-                alt="Anish"
-                animate={{
-                  y: [0, -10, 0],
-                }}
-                transition={{
-                  duration: 6,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-                className="
-                  absolute
-                  bottom-0
-                  left-1/2
-                  -translate-x-1/2
-                  h-[82%]
-                  w-auto
-                  object-contain
-                  z-10
-                  drop-shadow-[0_20px_60px_rgba(59,130,246,0.25)]
-                  will-change-transform
-                "
-              />
-
-              {/* BOTTOM INFO CARD */}
+              {/* CIRCLE EFFECT */}
               <div
                 className="
                   absolute
-                  bottom-6
-                  left-1/2
-                  -translate-x-1/2
-                  w-[86%]
-                  rounded-3xl
-                  border
-                  border-white/10
-                  bg-[#0b1220]/70
-                  backdrop-blur-2xl
-                  p-5
+                  inset-0
+
                   flex
                   items-center
-                  gap-4
-                  z-20
+                  justify-center
                 "
               >
-                {/* ICON */}
+                {/* CIRCLE 1 */}
+                <motion.div
+                  animate={{
+                    rotate: 360,
+                  }}
+                  transition={{
+                    duration: 35,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
+                  className="
+                    absolute
+
+                    w-[340px]
+                    h-[340px]
+
+                    rounded-full
+
+                    border
+                    border-dashed
+                    border-blue-500/20
+                  "
+                />
+
+                {/* CIRCLE 2 */}
+                <motion.div
+                  animate={{
+                    rotate: -360,
+                  }}
+                  transition={{
+                    duration: 50,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
+                  className="
+                    absolute
+
+                    w-[440px]
+                    h-[440px]
+
+                    rounded-full
+
+                    border
+                    border-white/[0.04]
+                  "
+                />
+
+                {/* CIRCLE 3 */}
                 <div
                   className="
-                    w-14
-                    h-14
-                    rounded-2xl
-                    bg-blue-500/10
+                    absolute
+
+                    w-[260px]
+                    h-[260px]
+
+                    rounded-full
+
                     border
-                    border-blue-500/20
+                    border-blue-500/10
+                  "
+                />
+              </div>
+
+              {/* IMAGE CONTAINER */}
+              <div
+                className="
+                  absolute
+                  inset-0
+
+                  flex
+                  items-end
+                  justify-center
+
+                  pt-20
+                "
+              >
+                {/* IMAGE GLOW */}
+                <div
+                  className="
+                    absolute
+                    bottom-24
+
+                    w-[240px]
+                    h-[240px]
+
+                    rounded-full
+
+                    bg-blue-500/20
+
+                    blur-[100px]
+                  "
+                />
+
+                {/* IMAGE */}
+                <motion.img
+                  src="/Anish.png"
+                  alt="Anish"
+                  animate={{
+                    y: [0, -10, 0],
+                  }}
+                  transition={{
+                    duration: 5,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
+                  className="
+                    relative
+                    z-20
+
+                    h-[540px]
+                    w-auto
+
+                    object-contain
+
+                    drop-shadow-[0_25px_50px_rgba(59,130,246,0.35)]
+
+                    select-none
+                    pointer-events-none
+                  "
+                />
+              </div>
+
+              {/* BOTTOM CARD */}
+              <motion.div
+                whileHover={{
+                  y: -4,
+                }}
+                className="
+                  absolute
+                  bottom-5
+                  left-1/2
+                  -translate-x-1/2
+                  z-30
+
+                  w-[88%]
+
+                  rounded-[28px]
+
+                  border
+                  border-white/10
+
+                  bg-[#0B1120]/75
+
+                  backdrop-blur-3xl
+
+                  px-5
+                  py-5
+
+                  shadow-[0_10px_40px_rgba(0,0,0,0.45)]
+                "
+              >
+                <div
+                  className="
                     flex
                     items-center
-                    justify-center
-                    text-blue-400
+                    gap-4
                   "
                 >
-                  <Code2 size={24} />
-                </div>
-
-                {/* TEXT */}
-                <div>
-                  <h3
+                  {/* ICON */}
+                  <div
                     className="
-                      text-xl
-                      font-semibold
+                      w-14
+                      h-14
+
+                      rounded-2xl
+
+                      bg-gradient-to-br
+                      from-blue-500
+                      to-cyan-400
+
+                      flex
+                      items-center
+                      justify-center
+
                       text-white
-                    "
-                  >
-                    Full Stack Developer
-                  </h3>
 
-                  <p
-                    className="
-                      mt-1
-                      text-sm
-                      text-gray-400
+                      shadow-lg
+                      shadow-blue-500/30
                     "
                   >
-                    Data Analyst • AI Enthusiast
-                  </p>
+                    <Code2 size={24} />
+                  </div>
+
+                  {/* TEXT */}
+                  <div>
+                    <h3
+                      className="
+                        text-white
+                        text-2xl
+                        font-semibold
+                      "
+                    >
+                      Full Stack Developer
+                    </h3>
+
+                    <p
+                      className="
+                        mt-1
+
+                        text-sm
+
+                        text-gray-400
+                      "
+                    >
+                      Data Analyst • AI Enthusiast
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </motion.div>
+
+              {/* BOTTOM FADE */}
+              <div
+                className="
+                  absolute
+                  bottom-0
+                  left-0
+                  right-0
+
+                  h-[180px]
+
+                  bg-gradient-to-t
+                  from-[#030712]
+                  to-transparent
+
+                  pointer-events-none
+                "
+              />
             </div>
           </motion.div>
         </div>
