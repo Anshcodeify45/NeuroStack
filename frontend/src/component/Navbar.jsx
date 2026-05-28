@@ -39,7 +39,7 @@ export default function Navbar() {
 
         {/* CTA Button */}
         <a
-          href="/ANISH PATNAIK.pdf"
+          href="/Anish_Patnaik.pdf"
           target="_blank"
           className="hidden md:inline-flex px-5 py-2 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-sm font-medium shadow-lg shadow-blue-500/20 hover:scale-105 transition"
         >
