@@ -330,7 +330,7 @@ export default function Hero() {
           {/* SECONDARY BUTTON */}
           <a
             href="/Anish_Patnaik.pdf"
-            download
+            download="Anish_Patnaik_Resume.pdf"
             className="
               group
               px-8
