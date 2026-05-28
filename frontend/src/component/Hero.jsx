@@ -329,7 +329,7 @@ export default function Hero() {
 
           {/* SECONDARY BUTTON */}
           <a
-            href="/ANISH_PATNAIK_RESUME.pdf"
+            href="/Anish_Patnaik.pdf"
             download
             className="
               group
