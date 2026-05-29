@@ -2,11 +2,10 @@ import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import {
   ArrowRight,
-  GithubIcon,
-  LinkedinIcon,
   Download,
   Sparkles,
   MousePointer2,
+
 } from "lucide-react";
 
 export default function Hero() {
@@ -83,9 +82,7 @@ export default function Hero() {
         "
       />
 
-      {/* ================================================= */}
       {/* FLOATING BLURS */}
-      {/* ================================================= */}
 
       <motion.div
         animate={{
@@ -136,20 +133,12 @@ export default function Hero() {
       {/* ================================================= */}
 
       <div className="relative z-10 max-w-7xl mx-auto">
-
-        {/* TOP BADGE */}
+        
+        {/* BADGE */}
         <motion.div
-          initial={{
-            opacity: 0,
-            y: 20,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 0.8,
-          }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
           className="flex justify-center"
         >
           <div
@@ -189,22 +178,16 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        {/* HERO TEXT */}
+        {/* HERO CONTENT */}
+
         <motion.div
-          initial={{
-            opacity: 0,
-            y: 40,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 1,
-          }}
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
           className="text-center"
         >
           {/* SMALL TITLE */}
+
           <p
             className="
               mt-10
@@ -218,7 +201,8 @@ export default function Hero() {
             Full Stack Developer • AI Enthusiast
           </p>
 
-          {/* MAIN HEADING */}
+          {/* HEADING */}
+
           <h1
             className="
               mt-6
@@ -253,6 +237,7 @@ export default function Hero() {
           </h1>
 
           {/* TYPEWRITER */}
+
           <div
             className="
               mt-8
@@ -281,6 +266,7 @@ export default function Hero() {
           </div>
 
           {/* DESCRIPTION */}
+
           <p
             className="
               mt-8
@@ -299,19 +285,11 @@ export default function Hero() {
           </p>
         </motion.div>
 
-        {/* ================================================= */}
         {/* CTA */}
-        {/* ================================================= */}
 
         <motion.div
-          initial={{
-            opacity: 0,
-            y: 30,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{
             delay: 0.5,
             duration: 0.8,
@@ -326,7 +304,8 @@ export default function Hero() {
             gap-5
           "
         >
-          {/* PRIMARY */}
+          {/* PRIMARY BUTTON */}
+
           <a
             href="#projects"
             className="
@@ -382,11 +361,11 @@ export default function Hero() {
             />
           </a>
 
-          {/* RESUME */}
+          {/* RESUME BUTTON */}
+
           <a
-            href="/Anish_Patnaik.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/resume.pdf"
+            download
             className="
               group
               px-8
@@ -418,19 +397,11 @@ export default function Hero() {
           </a>
         </motion.div>
 
-        {/* ================================================= */}
         {/* STATS */}
-        {/* ================================================= */}
 
         <motion.div
-          initial={{
-            opacity: 0,
-            y: 30,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{
             delay: 0.8,
             duration: 0.8,
@@ -463,9 +434,7 @@ export default function Hero() {
           ].map((item, index) => (
             <motion.div
               key={index}
-              whileHover={{
-                y: -6,
-              }}
+              whileHover={{ y: -6 }}
               className="
                 relative
                 overflow-hidden
@@ -478,7 +447,6 @@ export default function Hero() {
                 shadow-[0_10px_40px_rgba(0,0,0,0.35)]
               "
             >
-              {/* GLOW */}
               <div
                 className="
                   absolute
@@ -518,17 +486,11 @@ export default function Hero() {
           ))}
         </motion.div>
 
-        {/* ================================================= */}
-        {/* SOCIALS */}
-        {/* ================================================= */}
+        {/* SOCIAL LINKS */}
 
         <motion.div
-          initial={{
-            opacity: 0,
-          }}
-          animate={{
-            opacity: 1,
-          }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{
             delay: 1,
             duration: 1,
@@ -543,60 +505,79 @@ export default function Hero() {
           "
         >
           {/* GITHUB */}
+
           <a
-            href="https://github.com/"
-            target="_blank"
-            rel="noreferrer"
-            className="
-              w-14
-              h-14
-              rounded-2xl
-              border
-              border-white/10
-              bg-white/[0.04]
-              backdrop-blur-xl
-              flex
-              items-center
-              justify-center
-              text-gray-300
-              hover:text-white
-              hover:border-blue-500/30
-              hover:-translate-y-1
-              transition-all
-              duration-300
-            "
-          >
-            <GithubIcon size={22} />
-          </a>
+  href="https://github.com/"
+  target="_blank"
+  rel="noreferrer"
+  className="
+    w-14
+    h-14
+    rounded-2xl
+    border
+    border-white/10
+    bg-white/[0.04]
+    backdrop-blur-xl
+    flex
+    items-center
+    justify-center
+    text-gray-300
+    hover:text-white
+    hover:border-blue-500/30
+    hover:-translate-y-1
+    transition-all
+    duration-300
+  "
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="22"
+    height="22"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 008 10.93c.58.1.79-.25.79-.56v-2.02c-3.26.71-3.95-1.57-3.95-1.57-.53-1.36-1.3-1.72-1.3-1.72-1.06-.73.08-.72.08-.72 1.17.08 1.79 1.2 1.79 1.2 1.04 1.77 2.72 1.26 3.38.97.1-.75.41-1.26.74-1.55-2.6-.3-5.33-1.3-5.33-5.8 0-1.28.46-2.33 1.2-3.15-.12-.3-.52-1.5.11-3.13 0 0 .98-.31 3.2 1.2a11.2 11.2 0 015.82 0c2.22-1.51 3.2-1.2 3.2-1.2.63 1.63.23 2.83.11 3.13.75.82 1.2 1.87 1.2 3.15 0 4.51-2.73 5.5-5.34 5.79.42.36.8 1.09.8 2.2v3.27c0 .31.21.67.8.56A11.5 11.5 0 0023.5 12C23.5 5.65 18.35.5 12 .5z" />
+  </svg>
+</a>
 
           {/* LINKEDIN */}
+
           <a
-            href="https://linkedin.com/"
-            target="_blank"
-            rel="noreferrer"
-            className="
-              w-14
-              h-14
-              rounded-2xl
-              border
-              border-white/10
-              bg-white/[0.04]
-              backdrop-blur-xl
-              flex
-              items-center
-              justify-center
-              text-gray-300
-              hover:text-white
-              hover:border-blue-500/30
-              hover:-translate-y-1
-              transition-all
-              duration-300
-            "
-          >
-            <LinkedinIcon size={22} />
-          </a>
+  href="https://linkedin.com/"
+  target="_blank"
+  rel="noreferrer"
+  className="
+    w-14
+    h-14
+    rounded-2xl
+    border
+    border-white/10
+    bg-white/[0.04]
+    backdrop-blur-xl
+    flex
+    items-center
+    justify-center
+    text-gray-300
+    hover:text-white
+    hover:border-blue-500/30
+    hover:-translate-y-1
+    transition-all
+    duration-300
+  "
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="22"
+    height="22"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM.5 8h4V24h-4V8zm7 0h3.8v2.2h.1c.53-1 1.82-2.2 3.75-2.2 4 0 4.75 2.63 4.75 6V24h-4v-7.1c0-1.7-.03-3.9-2.38-3.9-2.38 0-2.75 1.85-2.75 3.77V24h-4V8z" />
+  </svg>
+</a>
 
           {/* CONTACT */}
+
           <a
             href="#contact"
             className="
@@ -623,9 +604,7 @@ export default function Hero() {
           </a>
         </motion.div>
 
-        {/* ================================================= */}
         {/* SCROLL INDICATOR */}
-        {/* ================================================= */}
 
         <motion.div
           animate={{
