@@ -10,6 +10,7 @@ import Project from './component/Project'
 import ScrollProgress from './component/ScrollProgress'
 import Skiills from './component/Skills'
 import Contact from './component/Contact'
+import Service from './component/Service'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +22,7 @@ function App() {
     <Hero />
     <About />
     <Project />
+    <Service />
     <Skiills />
     <Contact />
     </>

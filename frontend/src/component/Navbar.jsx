@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
-  const links = ["Home", "About", "Skills", "Projects", "Contact"];
+  const links = ["Home", "About", "Skills", "Services","Projects", "Contact"];
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50">
